@@ -34,16 +34,16 @@
    .title1{
        color:#ccd6f6;
        font-weight: bold;
-       font-size: 4.6rem;
+       font-size: 4.6vw;
        font-family: 'Inter', sans-serif;}
    .title2{
        font-weight: bold;
-       font-size: 4.6rem;
+       font-size: 4.6vw;
        font-family: 'Inter', sans-serif;
    }
    .desc{
        font-family: 'Inter', sans-serif;
-       font-size: 1.1rem;
+       font-size: 1.1vw;
        padding-top: 20px;
        line-height: 24pt;
    }
@@ -541,7 +541,7 @@ span{
   }
   
   .ul .li::after {
-    background:#ccd6f6;
+    background:#ccd6f6; 
     content: '';
     width: 15px;
     height: 15px;
@@ -622,6 +622,64 @@ background-color: #112240;
   }
   
   /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .textee {font-size: 11px}
-  }
+  @media screen and (max-width: 768px) {
+    .email, .email2 {
+        display: none; /* Cacher l'élément lorsque la fenêtre est réduite */
+    }
+    .hero{
+        padding: 100px 100px;
+    }
+    .navbaritems img{
+        display: none;
+    }
+    .about_section{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 80px;
+        margin-left: 100px;
+        text-justify: inter-word;
+    
+    }
+    .aboutme{
+        margin-bottom: 30px;
+        margin-left: 100px;
+        margin-top: 70px;
+        color:#ccd6f6;
+    }
+    .aboutme::after{
+        content: "";
+        width: 250px;
+        height: 1px;   
+        background:#8892b0;
+        position: absolute;
+        margin-top:20px;
+        margin-left: 30px;
+    }
+
+    .text{
+        width: 100%;
+    }
+    .text2{
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        line-height: 20pt;
+    }
+    .liste ul{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0px 5px;
+        
+    }
+    .liste{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .liste ul li{
+        margin-left: 30px;
+    }
+    .kolech{
+        margin-top: 50px;
+    }
+}
